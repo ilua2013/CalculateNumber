@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        PrintOddNumbers(1, 99);
+    }
+
+    static void PrintOddNumbers(int start, int end)
+    {
+        if (start > end)
+            return;
+        
+        Console.WriteLine(start);
+        PrintOddNumbers(start + 2, end);
+    }
+}
